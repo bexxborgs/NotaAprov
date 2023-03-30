@@ -9,9 +9,20 @@ import java.util.Scanner;
      public static void main(String args[]) {
          Scanner s = new Scanner (System.in);
 
-        System.out.println (" Digite sua nota: ");
-        int nota = s.nextInt();
-        String notaSt = getNota(nota);
+        System.out.println (" Digite sua 1ªnota: ");
+        int nota1 = s.nextInt();
+
+        System.out.println (" Digite sua 2ª nota: ");
+        int nota2= s.nextInt();
+
+        System.out.println (" Digite sua 3ª nota: ");
+        int nota3= s.nextInt();
+
+         System.out.println (" Digite sua 4ª nota: ");
+         int nota4= s.nextInt();
+
+
+        String notaSt = getNota((nota1 + nota2 + nota3 + nota4)/4);
         System.out.println(notaSt);
 
      }
